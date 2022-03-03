@@ -22,7 +22,7 @@ let initialState = {
 // }
 
 //with immer js
-
+//PRODUCE - it's converts the mutable state to immutable state and also it makes the mutable copy of the state
 const foo = produce((draft = initialState, action) => {
   switch (action.type) {
     case "ITEMS": {
